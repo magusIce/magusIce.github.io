@@ -1,5 +1,5 @@
-<%@ page language="java" contentType="text/html; charset=EUC-KR"
-    pageEncoding="EUC-KR"%>
+<%@ page language="java" contentType="text/html; charset=utf-8"
+    pageEncoding="utf-8"%>
        
 <jsp:include page="main_up.jsp" ></jsp:include>
 
@@ -17,7 +17,7 @@
 		<td>
 			<%
 				
-				String key = "╟к╩Ж"; 
+				String key = "Й╡─Л┐┴"; 
 				String google = "http://www.google.com/search";
 				String autocom = "off";
 				String str = request.getParameter("commend");
@@ -26,21 +26,21 @@
 	
 			%>
 			<form action=<%=google %> target="_blank"> 
-				<input type=text name = q  placeholder="Ё╩©К ют╥б" autocomplete=<%=autocom %> /> 
-				<input type=submit name=button value="Google ╟к╩Ж"  />   
+				<input type=text name = q  placeholder="К┌╢Л ╘ Л·┘К═╔" autocomplete=<%=autocom %> /> 
+				<input type=submit name=button value="Google Й╡─Л┐┴"  />   
 			</form>
 			<%
 				if(autocom.equals("off"))
 				{
 					String commend = "on";
 				%>
-					<button style='background:gray;color:white;' onclick="window.location.href='index.jsp?commend=<%=commend%>'">╟к╩Ж╠Б╥о OFF</button>
+					<button style='background:gray;color:white;' onclick="window.location.href='index.jsp?commend=<%=commend%>'">Й╡─Л┐┴Й╦╟К║² OFF</button>
 				<%}
 				else if(autocom.equals("on"))
 				{
 					String commend = "off";
 				%>
-					<button style='background:lightGray;color:black;' onclick="window.location.href='index.jsp?commend=<%=commend%>'">╟к╩Ж╠Б╥о ON</button>
+					<button style='background:lightGray;color:black;' onclick="window.location.href='index.jsp?commend=<%=commend%>'">Й╡─Л┐┴Й╦╟К║² ON</button>
 				<%}
 			%>
 		</td>
